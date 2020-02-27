@@ -36,7 +36,7 @@ jobs:
           #mv luci/themes/luci-theme-rosy package/lean/
           #rm -rf luci/
           #sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/' package/lean/luci-theme-rosy/Makefile
-          git clone https://github.com/jerrykuku/luci-theme-argon
+          git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
           rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
           ./scripts/feeds update -a
           ./scripts/feeds install -a
